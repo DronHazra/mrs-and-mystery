@@ -41,12 +41,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:5.6.3"],\
             ["@types/node", "npm:17.0.27"],\
             ["@types/react", "npm:18.0.6"],\
+            ["clsx", "npm:1.1.1"],\
             ["eslint", "npm:8.14.0"],\
             ["eslint-config-next", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:12.1.5"],\
             ["next", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:12.1.5"],\
             ["react", "npm:18.0.0"],\
             ["react-dom", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:18.0.0"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
+            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"],\
+            ["windups", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:1.2.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1213,6 +1215,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["braces", "npm:3.0.2"],\
             ["fill-range", "npm:7.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["break-styled-lines", [\
+        ["npm:1.3.1", {\
+          "packageLocation": "./.yarn/cache/break-styled-lines-npm-1.3.1-4c50a3d34f-c9bad32619.zip/node_modules/break-styled-lines/",\
+          "packageDependencies": [\
+            ["break-styled-lines", "npm:1.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2896,12 +2907,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/material", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:5.6.3"],\
             ["@types/node", "npm:17.0.27"],\
             ["@types/react", "npm:18.0.6"],\
+            ["clsx", "npm:1.1.1"],\
             ["eslint", "npm:8.14.0"],\
             ["eslint-config-next", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:12.1.5"],\
             ["next", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:12.1.5"],\
             ["react", "npm:18.0.0"],\
             ["react-dom", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:18.0.0"],\
-            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"]\
+            ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"],\
+            ["windups", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:1.2.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3822,6 +3835,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-number-object", "npm:1.0.7"],\
             ["is-string", "npm:1.0.7"],\
             ["is-symbol", "npm:1.0.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["windups", [\
+        ["npm:1.2.1", {\
+          "packageLocation": "./.yarn/cache/windups-npm-1.2.1-31e4698434-0f11d42fef.zip/node_modules/windups/",\
+          "packageDependencies": [\
+            ["windups", "npm:1.2.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:1.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/windups-virtual-a679a7cf0c/0/cache/windups-npm-1.2.1-31e4698434-0f11d42fef.zip/node_modules/windups/",\
+          "packageDependencies": [\
+            ["windups", "virtual:2cd63a3aacac2d13ea3da83a712921f888c36c3be05661c6d05a874a14a07dc7000b6d8c5649aeae8e81deefd232e6697f5d99b6afb2e2e8b975be75c5a11e01#npm:1.2.1"],\
+            ["@types/react", "npm:18.0.6"],\
+            ["break-styled-lines", "npm:1.3.1"],\
+            ["react", "npm:18.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
