@@ -7,12 +7,12 @@ import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
 import DialogBox from '../src/DialogBox';
-import { theater } from '../src/script';
+import { artist } from '../src/script';
 import useComponentSize from '@rehooks/component-size';
 import { useKeepInViewer } from '../src/useKeepInViewer';
 import { Button, ButtonGroup } from '@mui/material';
 
-const Home: NextPage = () => {
+const Artist: NextPage = () => {
 	const [step, setStep] = React.useState(0);
 	const [currentStepFinished, setFinished] = React.useState(false);
 
@@ -36,9 +36,9 @@ const Home: NextPage = () => {
 		};
 	});
 	return (
-		<Container maxWidth='md' sx={{ my: 1 }}>
+		<Container maxWidth='md' sx={{ mt: 1 }}>
 			<div ref={rootRef}>
-				{theater
+				{artist
 					.slice(0, step + 1)
 					.map(({ content }: { content: React.ReactNode }, index) => {
 						return (
@@ -48,25 +48,9 @@ const Home: NextPage = () => {
 						);
 					})}
 				{keepY}
-				{step >= theater.length && (
-					<ButtonGroup fullWidth>
-						<Button LinkComponent={Link} href='/artist'>
-							Artist
-						</Button>
-						<Button LinkComponent={Link} href='/chef'>
-							Chef
-						</Button>
-						<Button LinkComponent={Link} href='/Librarian'>
-							Librarian
-						</Button>
-						<Button LinkComponent={Link} href='/florist'>
-							Florist
-						</Button>
-					</ButtonGroup>
-				)}
 			</div>
 		</Container>
 	);
 };
 
-export default Home;
+export default Artist;
