@@ -120,3 +120,55 @@ export const chef: scriptNode[] = [
 			'Suddenly, your vision turns hazy and everything begins to spin. You manage to hold onto the table as your eyelids grow heavy and the world turns black.',
 	},
 ];
+
+export const librarian: scriptNode[] = [
+	{
+		content:
+			'The pattern of books on the smallest key resonates with you and you insert it into the matching door. As the door opens, your heart is filled with the familiar, calming scent of old books and cedarwood. You find yourself standing in the middle of the manor’s renowned library and sneeze from all of the dust. On the other side of the room is another door, which is locked shut with a padlock. Upon closer inspection, you find that the code to open this lock is three, three digit numbers: ###-###-###. Everything appears untouched, as if no one has visited the place for years, but a book left open on the floor catches your attention.',
+	},
+	{
+		content: (
+			<React.Fragment>
+				You walk over to the book and recognize the title: Romeo and Juliet.
+				There is a piece of paper sticking out from the pages with what you
+				recall as a passage from this book <br />{' '}
+				<em>PARTING IS SUCH SWEET SORROW</em> <br />
+				The classic Shakesperian play of two star-crossed lovers whose fate led
+				both to their deaths… You think about the missing wedding couple and
+				chuckle. How fitting. Maybe this quote is somehow connected to the
+				combination on the door.
+			</React.Fragment>
+		),
+		answer: '002-003-199',
+	},
+	{
+		content:
+			'You input the combination into the lock on the door and you’re able to shove it open. Your jaw drops in awe when you realize the door has led you to an even larger section of the library. Shelves of books tower over you and for the first time ever, you feel a sense of uneasiness from the sheer number of books around you.',
+	},
+	{
+		content:
+			'Once again, you notice that on the other side of the room is a locked door. You also spot a small box on one of the tables, which has a number lock for 9 digits attached to it.',
+	},
+	{
+		content:
+			'Just like the previous room, the books are perfectly arranged, with exception to a series of books in the corner. Compared to the perfect neatness of the rest of the room, you can’t help but notice it sticks out like a sore thumb.',
+	},
+	{
+		content:
+			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 9 books. On each book is a number from 1 to 9. You eye the box on the table again and suspect it must be something that could help you get out of there.',
+		iframeURL: 'https://eclectic-puffpuff-226153.netlify.app/',
+		answer: '4, 3, 5, 1, 2',
+	},
+	{
+		content:
+			'Inside the box is a key and a lamp. You leave the latter in the box for now and only take the key, which fits perfectly in the lock of the door. When you manage to pull it open, all that it leads to is a slide with no apparent ending. You stare at it in disappointment.',
+	},
+	{
+		content:
+			'You hear the thud of a book falling to the ground behind you, followed by the sound of many more books falling as well. You turn around to see the bookshelves collapsing to the floor one by one, forcing you to edge closer to the door.',
+	},
+	{
+		content:
+			'The ground shakes beneath you and you nervously stare at the only path left for you to go. Taking a deep breath, you sit yourself on the slide and push yourself into the darkness.',
+	},
+];
