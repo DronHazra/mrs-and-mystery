@@ -1,8 +1,7 @@
-import { Divider } from '@mui/material';
-import React, { ReactNode } from 'react';
+import React from 'react';
 
 type scriptNode = {
-	content: ReactNode;
+	content: React.ReactNode;
 	answer?: string;
 	iframeURL?: string;
 };
@@ -92,6 +91,26 @@ export const florist: scriptNode[] = [
 		content:
 			'On your left, there is a wooden table. Two potted plants sit on it — with your experience, you immediately know the first one is a rose, and the second is a lily. There is also a calendar with a stamp placed nearby. Along the edges of the stamp, the letters “mmdd” are engraved.',
 	},
+	{
+		content:
+			'On your right, you are led to a pleasant view of the rest of the garden where a grand fountain resides in the center of the hedges. You spot some markings on the otherwise spotless fountain, but can’t really make out what it is. When you try to take a closer look, your foot hits something and you look down to see a bouquet laying on the ground. Your heart sinks when you realize most of them are missing some petals',
+		iframeURL: 'https://resonant-cobbler-098472.netlify.app/',
+		answer: '0714',
+	},
+	{
+		content:
+			'You stamp the date with confidence, but your mind is racing. Who was the author of these journal entries? Is it possible that the wedding couple’s relationship wasn’t as perfect as it seemed to be?',
+	},
+	{
+		content:
+			"Something rustles in the hedges nearby. Turning around, you spot a bunny sniffing at the scraps of paper it's been collecting. There are traces of ink on some of them and you bend down to collect the matching pieces of paper. The bunny looks at you with sad eyes before dashing away.",
+		iframeURL: 'https://gleeful-cranachan-fac089.netlify.app/',
+		answer: 'deadly nightshade',
+	},
+	{
+		content:
+			'You shout your answer in joy and the birds fly away in fear. Oblivious to the fleeing creatures, you don’t notice how still the garden has become, nor do you notice the vines creeping towards you. Before you know it, the vines have latched onto your ankles and you are dragged into the endless hedges.',
+	},
 ];
 
 export const chef: scriptNode[] = [
@@ -131,7 +150,7 @@ export const librarian: scriptNode[] = [
 			<React.Fragment>
 				You walk over to the book and recognize the title: Romeo and Juliet.
 				There is a piece of paper sticking out from the pages with what you
-				recall as a passage from this book <br />{' '}
+				recall as a passage from this book <br />
 				<em>PARTING IS SUCH SWEET SORROW</em> <br />
 				The classic Shakesperian play of two star-crossed lovers whose fate led
 				both to their deaths… You think about the missing wedding couple and
@@ -170,5 +189,115 @@ export const librarian: scriptNode[] = [
 	{
 		content:
 			'The ground shakes beneath you and you nervously stare at the only path left for you to go. Taking a deep breath, you sit yourself on the slide and push yourself into the darkness.',
+	},
+];
+
+export const finalpuzzle: scriptNode[] = [
+	{
+		content:
+			'When you finally come to, you realize you are in a new room. Around you were the rest of the wedding prep crew and you sigh in relief at their familiar faces. The room was otherwise completely empty except for the small door in the corner. There is no lock, but none of you are able to get it to open.',
+	},
+	{
+		content:
+			'On the brink of giving up, one of you notices a piece of paper sticking out from the small gap beneath the door. The four of you huddle around the paper and read:',
+	},
+	{
+		content: (
+			<em>
+				Everything you’ve worked for is behind this door <br />
+				To SUM things up, this is quite a simple puzzle <br />
+				EVERYTHING comes down to this <br />
+				Under pressure like never BEFORE <br />
+				THIS decides your fate <br />
+				Look behind you; the doors are closed <br />
+				Where will you GO? <br />
+				The only way is FORWARD
+			</em>
+		),
+		iframeURL: 'https://cerulean-banoffee-be9102.netlify.app/',
+		answer: 'eloped',
+	},
+	{
+		content:
+			'You look at each other in shock as you all come to the same realization:',
+	},
+	{
+		content: <em>Wait… eloped! They’re not dead; they ran away!</em>,
+	},
+	{
+		content:
+			'As you all share the same thought, the small door creaks open allowing the four of you to crawl through. You arrive in what appears to be a shed of some sort. Rusted tools were littered all over the place and the only source of light was the slow burning fire in the corner. The room is rather dull, but some colourful slips of paper stuck on one of the toolboxes pop out of the scenery.',
+	},
+	{
+		content:
+			'The door you came from has no handle on your side, leaving you locked in. The fire flickers, reminding you of the little time you have until it finally dies.',
+	},
+	{
+		content:
+			'Dread continues to grow onto your team as you all begin to fear that there is no way out of this puzzle. Your discussions turn heated and you can feel an argument well on its way.',
+	},
+	{
+		content: <em>Breathe.</em>,
+	},
+	{
+		content:
+			'Finally, one of you suggests to stop and read the notes that could be found in the room. You all huddle around the first note:',
+	},
+	{
+		content:
+			'That’s it, you can make a key! Somebody left the blueprints behind… All you guys need to do is find the materials and the right length of key cuts.',
+	},
+	{
+		content: 'But… how are you going to shape the key?',
+	},
+	{
+		content:
+			'You all turn to the fire in the corner. The fire in the corner is diminishing but it should do. Now all you have to do is decide who’s going to be the one who makes the key. You silently weigh your options before making your vote:',
+	},
+	// {
+	//   content: <em>Who do you think should make the key?</em>
+	// } removed for now
+	{
+		content:
+			'The rest of you quickly start working to find the rest of the notes.',
+		answer: 'iron',
+	},
+	{
+		content: 'And the cuts?',
+		answer: '3212',
+	},
+	{
+		content:
+			'The room is barely lit by the fire, but the key has been made and that’s all that mattered. The four of you quickly start shoving aside all of the random tools and leftover junk to make a path to the shed’s door. The atmosphere is tense as the key is inserted into the lock, and there is a collective sigh of relief when you hear the familiar click.',
+	},
+	{
+		content:
+			'The door is pushed open and you’ve never felt more grateful for fresh air. You crash into one another on the front steps of the manor and fall into a pile on the rough pavement. A bunny stops to stare at you in curiosity before dashing away.',
+	},
+	{
+		content:
+			'The four of you look back at the manor and notice that the only door visible is the front entrance, still left unlocked. There is an unspoken agreement between everyone that you wouldn’t dare to check inside the manor again.',
+	},
+	{
+		content:
+			'You wonder why the wedding was even planned in the first place when the couple had already eloped. Where were the guests? The other wedding planners?',
+	},
+	{
+		content:
+			'Who left the door unlocked? Who took the time to set up all the puzzles?',
+	},
+	{
+		content: '… Was this some sick joke?',
+	},
+	{
+		content:
+			'Your heads are filled with questions, but none of you have the energy to find an answer. Someday, you will all reconvene to discuss everything that happened, but for now, you plan to head home and get some rest.',
+	},
+	{
+		content:
+			'The sun is still shining above and the fluffy clouds pass by, providing just the right amount of shade. Everything was the same as when you all arrived; warm, peaceful, and quiet.',
+	},
+	{
+		content: 'Perfect weather for a wedding.',
 	},
 ];
