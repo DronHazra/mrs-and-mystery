@@ -2300,6 +2300,7 @@ __metadata:
     react: latest
     react-dom: latest
     react-intersection-observer: ^9.1.0
+    react-unity-webgl: 8.x
     typescript: latest
     windups: ^1.2.1
   languageName: unknown
@@ -2603,6 +2604,15 @@ __metadata:
     react: ">=16.6.0"
     react-dom: ">=16.6.0"
   checksum: b67bf5b3e86dbab72d658b9a52a3589e5960583ab28c7c66272427d8fe30d4c7de422d5046ae96bd2683cdf80cc3264b2516f5ce80cae1dbe6cf3ca6dda392c5
+  languageName: node
+  linkType: hard
+
+"react-unity-webgl@npm:8.x":
+  version: 8.8.0
+  resolution: "react-unity-webgl@npm:8.8.0"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 6d21e9498b110621ce6ed8e06d1b05bfaff365f7ec4a3219b3ce109f6b883a4be01dbbba09cbc629febb2b895d4ccc50e25448224e5447e195b6b3c700544be6
   languageName: node
   linkType: hard
 
