@@ -192,7 +192,7 @@ export const librarian: scriptNode[] = [
 	},
 ];
 
-export const finalpuzzle: scriptNode[] = [
+export const final: scriptNode[] = [
 	{
 		content:
 			'When you finally come to, you realize you are in a new room. Around you were the rest of the wedding prep crew and you sigh in relief at their familiar faces. The room was otherwise completely empty except for the small door in the corner. There is no lock, but none of you are able to get it to open.',
