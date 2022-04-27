@@ -75,7 +75,7 @@ export const artist: scriptNode[] = [
 	{
 		content:
 			'The door at the end of the hallway is also now open to reveal a much more spacious room, occupied with only a table in the center. Spread across that table is a giant map and you can see another keypad next to it.',
-		answer: '17',
+		answer: '73',
 	},
 	{
 		content:
