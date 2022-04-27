@@ -118,7 +118,7 @@ export const chef: scriptNode[] = [
 		content:
 			'Your stomach grumbles as you take the key that looks awfully like a cake. In secret, you actually do take a bite of it just to make sure. (It wasn’t cake). The key fits perfectly in its matching door and you step into the manor’s stunning banquet hall. Everything looks amazing! But you notice that something seems out of place… Every good chef knows to serve their courses in order. And what’s with that huge safe at the end of the table?',
 		iframeURL: 'https://singular-baklava-b2281c.netlify.app/',
-		answer: '5362',
+		answer: '3443',
 	},
 	{
 		content:
