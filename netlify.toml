@@ -3,7 +3,7 @@ publish=".next"
 
 [build.environment]
 YARN_CACHE_FOLDER="/opt/buildhome/.yarn_cache"
-YARN_VERSION="3.1.1"
+YARN_VERSION="3.2.0"
 
 [[plugins]]
 package="@netlify/plugin-nextjs"
