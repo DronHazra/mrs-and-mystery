@@ -83,3 +83,40 @@ export const artist: scriptNode[] = [
 			'Through pinning the path between each destination, you map out the number 17 and type it into the keypad. The screen flashes green and a lovely tune rings out; you can’t resist from doing a little dance. Then, the floor beneath you promptly gives out and you fall into oblivion.',
 	},
 ];
+export const florist: scriptNode[] = [
+	{
+		content:
+			'You choose the key decorated with flowers and insert it into the matching door. To your surprise, it swings open to reveal the manor’s garden. The luscious hedges decorate the field with a meticulous pattern and force you to walk straight on until you are finally forced to choose a direction.',
+	},
+	{
+		content:
+			'On your left, there is a wooden table. Two potted plants sit on it — with your experience, you immediately know the first one is a rose, and the second is a lily. There is also a calendar with a stamp placed nearby. Along the edges of the stamp, the letters “mmdd” are engraved.',
+	},
+];
+
+export const chef: scriptNode[] = [
+	{
+		content:
+			'Your stomach grumbles as you take the key that looks awfully like a cake. In secret, you actually do take a bite of it just to make sure. (It wasn’t cake). The key fits perfectly in its matching door and you step into the manor’s stunning banquet hall. Everything looks amazing! But you notice that something seems out of place… Every good chef knows to serve their courses in order. And what’s with that huge safe at the end of the table?',
+		iframeURL: 'https://singular-baklava-b2281c.netlify.app/',
+		answer: '5362',
+	},
+	{
+		content:
+			'You open up the huge safe to reveal what appears to be a set of recipes, however everything is cut up and jumbled together. As you put the pieces back together, you remember your friends telling you something about the lethality of azaleas, but can’t remember the exact details they said.',
+		iframeURL: 'https://meek-cuchufli-922b89.netlify.app/',
+	},
+	{
+		content:
+			'You notice the weird set of letters at the bottom of the recipe. What could they possibly mean? Perhaps there’s something in the recipe that could help you out?',
+		answer: 'and in the taste confounds the appetite',
+	},
+	{
+		content:
+			'You read the quote out loud and wonder if there was a reason why the author of the recipe felt the need to reference Romeo and Juliet. A joyous tune rings across the banquet hall but nothing changes. Minutes pass and no matter what you try, you can’t seem to find a way out of the room. Exhausted, you decide to take a seat at the end of the table and stare longingly at the pudding nearby. Surely one bite won’t hurt… right? You grab a spoon and sneak in a small bite.',
+	},
+	{
+		content:
+			'Suddenly, your vision turns hazy and everything begins to spin. You manage to hold onto the table as your eyelids grow heavy and the world turns black.',
+	},
+];

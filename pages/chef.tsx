@@ -7,12 +7,12 @@ import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
 import DialogBox from '../src/DialogBox';
-import { artist } from '../src/script';
+import { chef } from '../src/script';
 import useComponentSize from '@rehooks/component-size';
 import { useKeepInViewer } from '../src/useKeepInViewer';
 import { Button, ButtonGroup } from '@mui/material';
 
-const Artist: NextPage = () => {
+const Chef: NextPage = () => {
 	const [step, setStep] = React.useState(0);
 	const [currentStepFinished, setFinished] = React.useState(false);
 
@@ -38,7 +38,7 @@ const Artist: NextPage = () => {
 	return (
 		<Container maxWidth='md' sx={{ mt: 1 }}>
 			<div ref={rootRef}>
-				{artist.slice(0, step + 1).map((scriptItem, index) => {
+				{chef.slice(0, step + 1).map((scriptItem, index) => {
 					return (
 						<DialogBox
 							key={index}
@@ -56,4 +56,4 @@ const Artist: NextPage = () => {
 	);
 };
 
-export default Artist;
+export default Chef;
