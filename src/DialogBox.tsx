@@ -3,6 +3,10 @@ import { Card, TextField, Typography } from '@mui/material';
 import { WindupChildren } from 'windups';
 import { keyframes } from '@emotion/react';
 import useKey from './useKey';
+import { Box } from '@mui/material';
+
+const HEIGHT = 450;
+const WIDTH = 720;
 
 const float = keyframes({
 	from: {
@@ -32,15 +36,17 @@ const DialogBox = ({
 	finish,
 	children,
 	answer,
+	iframeURL,
 }: {
 	finish: () => void;
 	children: React.ReactNode;
 	answer?: string;
+	iframeURL?: string;
 }) => {
 	const skipped = useKey('ArrowRight');
 	const [answered, setAnswered] = React.useState(false);
 	return (
-		<Card sx={{ my: 2 }}>
+		<Card sx={{ my: 2, pb: 1 }}>
 			<WindupChildren
 				skipped={skipped}
 				onFinished={() => {
@@ -58,12 +64,18 @@ const DialogBox = ({
 					onChange={evt => {
 						if (evt.target.value.toLowerCase() == answer) {
 							setAnswered(true);
+							finish();
 						}
 					}}
 					autoFocus
 					error={!answered}
-					sx={{ m: 3 }}
+					sx={{ m: 3, width: '80%' }}
 				></TextField>
+			)}
+			{skipped && iframeURL && (
+				<Box m={2}>
+					<iframe src={iframeURL} height={HEIGHT} width={WIDTH} />
+				</Box>
 			)}
 		</Card>
 	);

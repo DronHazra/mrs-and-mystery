@@ -40,13 +40,25 @@ const Artist: NextPage = () => {
 			<div ref={rootRef}>
 				{artist
 					.slice(0, step + 1)
-					.map(({ content }: { content: React.ReactNode }, index) => {
-						return (
-							<DialogBox key={index} finish={() => setFinished(true)}>
-								{content}
-							</DialogBox>
-						);
-					})}
+					.map(
+						(
+							{
+								content,
+								answer,
+							}: { content: React.ReactNode; answer?: string },
+							index
+						) => {
+							return (
+								<DialogBox
+									key={index}
+									finish={() => setFinished(true)}
+									answer={answer}
+								>
+									{content}
+								</DialogBox>
+							);
+						}
+					)}
 				{keepY}
 			</div>
 		</Container>

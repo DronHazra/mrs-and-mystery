@@ -38,15 +38,18 @@ const Home: NextPage = () => {
 	return (
 		<Container maxWidth='md' sx={{ my: 1 }}>
 			<div ref={rootRef}>
-				{theater
-					.slice(0, step + 1)
-					.map(({ content }: { content: React.ReactNode }, index) => {
-						return (
-							<DialogBox key={index} finish={() => setFinished(true)}>
-								{content}
-							</DialogBox>
-						);
-					})}
+				{theater.slice(0, step + 1).map((scriptItem, index) => {
+					return (
+						<DialogBox
+							key={index}
+							finish={() => setFinished(true)}
+							answer={scriptItem.answer}
+							iframeURL={scriptItem.iframeURL}
+						>
+							{scriptItem.content}
+						</DialogBox>
+					);
+				})}
 				{keepY}
 				{step >= theater.length && (
 					<ButtonGroup fullWidth>
