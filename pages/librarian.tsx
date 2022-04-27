@@ -5,6 +5,8 @@ import DialogBox from '../src/DialogBox';
 import { librarian } from '../src/script';
 import useComponentSize from '@rehooks/component-size';
 import { useKeepInViewer } from '../src/useKeepInViewer';
+import { Button } from '@mui/material';
+import Link from '../src/Link';
 
 const Librarian: NextPage = () => {
 	const [step, setStep] = React.useState(0);
@@ -45,6 +47,11 @@ const Librarian: NextPage = () => {
 					);
 				})}
 				{keepY}
+				{step >= librarian.length && (
+					<Button LinkComponent={Link} href='/final'>
+						the darkness
+					</Button>
+				)}
 			</div>
 		</Container>
 	);

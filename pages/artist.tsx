@@ -5,6 +5,8 @@ import DialogBox from '../src/DialogBox';
 import { artist } from '../src/script';
 import useComponentSize from '@rehooks/component-size';
 import { useKeepInViewer } from '../src/useKeepInViewer';
+import { Button } from '@mui/material';
+import Link from '../src/Link';
 
 const Artist: NextPage = () => {
 	const [step, setStep] = React.useState(0);
@@ -45,6 +47,11 @@ const Artist: NextPage = () => {
 					);
 				})}
 				{keepY}
+				{step >= artist.length && (
+					<Button LinkComponent={Link} href='/final'>
+						oblivion
+					</Button>
+				)}
 			</div>
 		</Container>
 	);

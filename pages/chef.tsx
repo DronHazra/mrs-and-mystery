@@ -5,6 +5,8 @@ import DialogBox from '../src/DialogBox';
 import { chef } from '../src/script';
 import useComponentSize from '@rehooks/component-size';
 import { useKeepInViewer } from '../src/useKeepInViewer';
+import { Button } from '@mui/material';
+import Link from '../src/Link';
 
 const Chef: NextPage = () => {
 	const [step, setStep] = React.useState(0);
@@ -44,6 +46,11 @@ const Chef: NextPage = () => {
 						</DialogBox>
 					);
 				})}
+				{step >= chef.length && (
+					<Button LinkComponent={Link} href='/final'>
+						uh oh
+					</Button>
+				)}
 				{keepY}
 			</div>
 		</Container>

@@ -5,6 +5,8 @@ import DialogBox from '../src/DialogBox';
 import { florist } from '../src/script';
 import useComponentSize from '@rehooks/component-size';
 import { useKeepInViewer } from '../src/useKeepInViewer';
+import { Button } from '@mui/material';
+import Link from '../src/Link';
 
 const Florist: NextPage = () => {
 	const [step, setStep] = React.useState(0);
@@ -45,6 +47,11 @@ const Florist: NextPage = () => {
 					);
 				})}
 				{keepY}
+				{step >= florist.length && (
+					<Button LinkComponent={Link} href='/final'>
+						endless hedges
+					</Button>
+				)}
 			</div>
 		</Container>
 	);
