@@ -15,7 +15,13 @@ const Home: NextPage = () => {
 		>
 			<Card sx={{ maxWidth: 'sm' }} elevation={6}>
 				<CardMedia component='img' height='50%' image='/unknown.png' />
-				<Button variant='contained' fullWidth size='large'>
+				<Button
+					variant='contained'
+					fullWidth
+					size='large'
+					target='_blank'
+					href='https://docs.google.com/forms/d/e/1FAIpQLSdDmuqeQDCxG0BYie7Gwvyim0euyoqdyLkm_JnbTK5AyaL_Ow/viewform'
+				>
 					sign up
 				</Button>
 			</Card>
