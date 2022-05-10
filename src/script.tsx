@@ -79,7 +79,7 @@ export const artist: scriptNode[] = [
 	},
 	{
 		content:
-			'Through pinning the path between each destination, you map out the number 17 and type it into the keypad. The screen flashes green and a lovely tune rings out; you can’t resist from doing a little dance. Then, the floor beneath you promptly gives out and you fall into oblivion.',
+			'Through pinning the path between each destination, you map out the number 73 and type it into the keypad. The screen flashes green and a lovely tune rings out; you can’t resist from doing a little dance. Then, the floor beneath you promptly gives out and you fall into oblivion.',
 	},
 ];
 export const florist: scriptNode[] = [
