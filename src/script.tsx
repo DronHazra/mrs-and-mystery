@@ -23,7 +23,7 @@ export const theater: scriptNode[] = [
 	},
 	{
 		content:
-			'Just as expected, the door to the manor was left unlocked and you all walk in. The manor is completely silent and to your surprise, no one is there to greet you. No matter how many you call out their names or ring their phones, none of you receive a response. Your footsteps echo in the hallway as you try to check the other rooms for any signs of life, but all of the doors were locked except for one.',
+			'Just as expected, the door to the manor was left unlocked and you all walk in. The manor is completely silent and to your surprise, no one is there to greet you. No matter how many times you call out their names or ring their phones, none of you receive a response. Your footsteps echo in the hallway as you try to check the other rooms for any signs of life, but all of the doors were locked except for one.',
 	},
 	{
 		content:
@@ -47,7 +47,7 @@ export const theater: scriptNode[] = [
 			'One of you notices the piles of paper, messily strewn all over the wooden desk nearby. As you sift through them, you realize that they appear to be scripts of some sort.',
 	},
 	{
-		content: '',
+		content: '[Combine answers for each padlock in lowercase with commas and spaces between each input]',
 		answer: 'bee, panther, lion, caterpillar, bear, clownfish', //CHANGED ANSWER TO CLOWNFISH NO SPACES
 	},
 	{
@@ -59,12 +59,12 @@ export const theater: scriptNode[] = [
 export const artist: scriptNode[] = [
 	{
 		content:
-			'You choose the colourful key and insert it into the matching door. The satisfying click of the door unlocking brings you comfort as you step into a long, bright hallway. The door behind you immediately shuts, leaving you all alone with a row of paintings staring back at you. Something crumples underneath your feet when you move closer to the paintings and you pick up a piece of paper with symbols of an eye, a bowtie, stripes and closed eye down.',
+			(<>You choose the colourful key and insert it into the matching door. The satisfying click of the door unlocking brings you comfort as you step into a long, bright hallway. The door behind you immediately shuts, leaving you all alone with a row of paintings staring back at you. Something crumples underneath your feet when you move closer to the paintings and you pick up a piece of paper with symbols of <strong>an eye, a bowtie, flowers and closed eye down.</strong></>),
 		iframeURL: 'https://quiet-pie-226127.netlify.app/',
 	},
 	{
 		content:
-			'Four doodles, four digit code… maybe that’s got something to do with it? There’s a keypad at the very end of the hallway',
+			'Four doodles, four digit code… maybe that’s got something to do with it? There’s a keypad at the very end of the hallway. [Answer with four numbers only.]',
 		answer: '4364',
 	},
 	{
@@ -74,36 +74,36 @@ export const artist: scriptNode[] = [
 	},
 	{
 		content:
-			'The door at the end of the hallway is also now open to reveal a much more spacious room, occupied with only a table in the center. Spread across that table is a giant map and you can see another keypad next to it.',
+			'The door at the end of the hallway is also now open to reveal a much more spacious room, occupied with only a table in the center. Spread across that table is a giant map and you can see another keypad next to it. [Answer with two numbers only.]',
 		answer: '73',
 	},
 	{
 		content:
-			'Through pinning the path between each destination, you map out the number 73 and type it into the keypad. The screen flashes green and a lovely tune rings out; you can’t resist from doing a little dance. Then, the floor beneath you promptly gives out and you fall into oblivion.',
+			'Through pinning the path between each destination, you map out the number 73 and type it into the keypad. The screen flashes green and a lovely tune rings out; you can’t resist doing a little dance. Then, the floor beneath you promptly gives out and you fall into oblivion.',
 	},
 ];
 export const florist: scriptNode[] = [
 	{
 		content:
-			'You choose the key decorated with flowers and insert it into the matching door. To your surprise, it swings open to reveal the manor’s garden. The luscious hedges decorate the field with a meticulous pattern and force you to walk straight on until you are finally forced to choose a direction.',
+			'You choose the key decorated with flowers and insert it into the matching door. To your surprise, it swings open to reveal the manor’s garden. The luscious hedges decorate the field with a meticulous pattern and lead you to walk straight on until you reach an opening.',
 	},
 	{
 		content:
-			'On your left, there is a wooden table. Two potted plants sit on it — with your experience, you immediately know the first one is a rose, and the second is a lily. There is also a calendar with a stamp placed nearby. Along the edges of the stamp, the letters “mmdd” are engraved.',
+			(<>On your right, you see a paper with two flowers printed on it. With your experience, you immediately know the first one is a rose, and the second is a lily, but why does it as "what month?" There is also a calendar with a stamp placed nearby. Along the edges of the stamp, the letters <strong>“mmdd”</strong> are engraved.</>),
 	},
 	{
 		content:
-			'On your right, you are led to a pleasant view of the rest of the garden where a grand fountain resides in the center of the hedges. You spot some markings on the otherwise spotless fountain, but can’t really make out what it is. When you try to take a closer look, your foot hits something and you look down to see a bouquet laying on the ground. Your heart sinks when you realize most of them are missing some petals',
+			'On your left, there is an altar that reflects a pleasant view of the rest of the garden where a grand fountain resides in the center of the hedges. You notice some odd markings on the fountain, but would need to take a closer look before you can figure out what it is. There are also some flowers littered around the altar and your heart sinks when you relize many of them are missing some petals. [Answer with four numbers only.]',
 		iframeURL: 'https://resonant-cobbler-098472.netlify.app/',
 		answer: '0714',
 	},
 	{
 		content:
-			'You stamp the date with confidence, but your mind is racing. Who was the author of these journal entries? Is it possible that the wedding couple’s relationship wasn’t as perfect as it seemed to be?',
+			'You recall this familiar date and stamp it with confidence. This was the day the couple got engaged! But... why so cryptic with this puzzle? Are they hiding something?',
 	},
 	{
 		content:
-			"Something rustles in the hedges nearby. Turning around, you spot a bunny sniffing at the scraps of paper it's been collecting. There are traces of ink on some of them and you bend down to collect the matching pieces of paper. The bunny looks at you with sad eyes before dashing away.",
+			"Something rustles in the hedges nearby. Turning around, you spot a bunny sniffing at the scraps of paper it's been collecting. There are traces of ink on some of them and you bend down to collect the matching pieces of paper. The bunny looks at you with sad eyes before dashing away. [Answer in lowercase with spaces between each input.]",
 		iframeURL: 'https://gleeful-cranachan-fac089.netlify.app/',
 		answer: 'deadly nightshade',
 	},
@@ -116,18 +116,18 @@ export const florist: scriptNode[] = [
 export const chef: scriptNode[] = [
 	{
 		content:
-			'Your stomach grumbles as you take the key that looks awfully like a cake. In secret, you actually do take a bite of it just to make sure. (It wasn’t cake). The key fits perfectly in its matching door and you step into the manor’s stunning banquet hall. Everything looks amazing! But you notice that something seems out of place… Every good chef knows to serve their courses in order. And what’s with that huge safe at the end of the table?',
+			'Your stomach grumbles as you take the key that looks awfully like a cake. In secret, you actually do take a bite of it just to make sure. (It wasn’t cake). The key fits perfectly in its matching door and you step into the manor’s stunning banquet hall. Everything looks amazing! But you notice that something seems out of place… Every good chef knows to serve their courses in order. And what’s with that huge safe at the end of the table? [Answer with four numbers only.]',
 		iframeURL: 'https://singular-baklava-b2281c.netlify.app/',
 		answer: '3443',
 	},
 	{
 		content:
-			'You open up the huge safe to reveal what appears to be a set of recipes, however everything is cut up and jumbled together. As you put the pieces back together, you remember your friends telling you something about the lethality of azaleas, but can’t remember the exact details they said.',
+			'You open up the huge safe to reveal what appears to be a set of recipes, however everything is cut up and jumbled together. As you put the pieces back together, you remember your florist friend telling you something about the lethality of azaleas, but can’t remember the exact details they said.',
 		iframeURL: 'https://meek-cuchufli-922b89.netlify.app/',
 	},
 	{
 		content:
-			'You notice the weird set of letters at the bottom of the recipe. What could they possibly mean? Perhaps there’s something in the recipe that could help you out?',
+			'You notice the weird set of letters at the bottom of the recipe. What could they possibly mean? Perhaps there’s something in the recipe that could help you out? [Answer in all lowercase with space between words.]',
 		answer: 'and in the taste confounds the appetite',
 	},
 	{
@@ -143,7 +143,7 @@ export const chef: scriptNode[] = [
 export const librarian: scriptNode[] = [
 	{
 		content:
-			'The pattern of books on the smallest key resonates with you and you insert it into the matching door. As the door opens, your heart is filled with the familiar, calming scent of old books and cedarwood. You find yourself standing in the middle of the manor’s renowned library and sneeze from all of the dust. On the other side of the room is another door, which is locked shut with a padlock. Upon closer inspection, you find that the code to open this lock is three, three digit numbers: ###-###-###. Everything appears untouched, as if no one has visited the place for years, but a book left open on the floor catches your attention.',
+			(<>The pattern of books on the smallest key resonates with you and you insert it into the matching door. As the door opens, your heart is filled with the familiar, calming scent of old books and cedarwood. You find yourself standing in the middle of the manor’s renowned library and sneeze from all of the dust. On the other side of the room is another door, which is locked shut with a padlock. Upon closer inspection, you find that the code to open this lock is <strong>three, three digit numbers.</strong> Everything appears untouched, as if no one has visited the place for years, but a book left open on the floor catches your attention.</>),
 	},
 	{
 		content: (
@@ -155,7 +155,7 @@ export const librarian: scriptNode[] = [
 				The classic Shakesperian play of two star-crossed lovers whose fate led
 				both to their deaths… You think about the missing wedding couple and
 				chuckle. How fitting. Maybe this quote is somehow connected to the
-				combination on the door.
+				combination on the door? [Answer in the format: ###-###-###]
 			</React.Fragment>
 		),
 		answer: '002-003-199',
@@ -174,7 +174,7 @@ export const librarian: scriptNode[] = [
 	},
 	{
 		content:
-			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 9 books. On each book is a number from 1 to 9. You eye the box on the table again and suspect it must be something that could help you get out of there.',
+			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 9 books. On each book is a number from 1 to 9. You eye the box on the table again and suspect it must be something that could help you get out of there. [Answer with commas and spaces between each number.]',
 		iframeURL: 'https://eclectic-puffpuff-226153.netlify.app/',
 		answer: '4, 3, 5, 1, 2',
 	},
