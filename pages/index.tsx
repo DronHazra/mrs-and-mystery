@@ -1,6 +1,7 @@
 import { Box, Button, Card, CardMedia, Container } from '@mui/material';
 import { NextPage } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
 	return (
@@ -15,15 +16,11 @@ const Home: NextPage = () => {
 		>
 			<Card sx={{ maxWidth: 'sm' }} elevation={6}>
 				<CardMedia component='img' height='50%' image='/unknown.png' />
-				<Button
-					variant='contained'
-					fullWidth
-					size='large'
-					target='_blank'
-					href='https://docs.google.com/forms/d/e/1FAIpQLSdDmuqeQDCxG0BYie7Gwvyim0euyoqdyLkm_JnbTK5AyaL_Ow/viewform'
-				>
-					sign up
-				</Button>
+				<Link href='/home' passHref>
+					<Button variant='contained' fullWidth size='large' component='div'>
+						start here
+					</Button>
+				</Link>
 			</Card>
 		</Box>
 	);
