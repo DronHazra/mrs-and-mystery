@@ -259,11 +259,11 @@ export const final: scriptNode[] = [
 	// } removed for now
 	{
 		content:
-			'The rest of you quickly start working to find the rest of the notes.',
+			'The rest of you quickly start working to find the rest of the notes. [Answer in lowercase, one word.]',
 		answer: 'iron',
 	},
 	{
-		content: 'And the cuts?',
+		content: 'And the cuts? [Answer with four numbers only.]',
 		answer: '3212',
 	},
 	{
