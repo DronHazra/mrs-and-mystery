@@ -9,6 +9,18 @@ type scriptNode = {
 const HEIGHT = 450;
 const WIDTH = 720;
 
+const artist1 = 'https://steady-klepon-5a98fd.netlify.app/';
+const artist2 = 'https://thriving-valkyrie-5359f4.netlify.app/';
+const chef1 = 'https://benevolent-madeleine-382949.netlify.app/';
+const chef2 = 'https://stirring-gecko-d9672a.netlify.app/';
+const theaterlink = 'https://inquisitive-taffy-2f3cd6.netlify.app/';
+const exit1 = 'https://quiet-rugelach-6582d5.netlify.app/';
+const exit2 = 'https://luxury-cactus-56f615.netlify.app/';
+const florist1 = 'https://nimble-manatee-ef173d.netlify.app/';
+const florist2 = 'https://admirable-valkyrie-7ff1ed.netlify.app/';
+const librarian1 = 'https://cate-pudding-95ef2f.netlify.app/';
+const librarian2 = 'https://friendly-douhua-dc51f1.netlify.app/';
+
 export const theater: scriptNode[] = [
 	{
 		content:
@@ -40,14 +52,15 @@ export const theater: scriptNode[] = [
 				combination to use.
 			</React.Fragment>
 		),
-		iframeURL: 'https://earnest-brigadeiros-708d7e.netlify.app/',
+		iframeURL: theaterlink,
 	},
 	{
 		content:
 			'One of you notices the piles of paper, messily strewn all over the wooden desk nearby. As you sift through them, you realize that they appear to be scripts of some sort.',
 	},
 	{
-		content: '[Combine answers for each padlock in lowercase with commas and spaces between each input]',
+		content:
+			'[Combine answers for each padlock in lowercase with commas and spaces between each input]',
 		answer: 'bee, panther, lion, caterpillar, bear, clownfish', //CHANGED ANSWER TO CLOWNFISH NO SPACES
 	},
 	{
@@ -58,9 +71,18 @@ export const theater: scriptNode[] = [
 
 export const artist: scriptNode[] = [
 	{
-		content:
-			(<>You choose the colourful key and insert it into the matching door. The satisfying click of the door unlocking brings you comfort as you step into a long, bright hallway. The door behind you immediately shuts, leaving you all alone with a row of paintings staring back at you. Something crumples underneath your feet when you move closer to the paintings and you pick up a piece of paper with symbols of <strong>an eye, a bowtie, flowers and closed eye down.</strong></>),
-		iframeURL: 'https://quiet-pie-226127.netlify.app/',
+		content: (
+			<>
+				You choose the colourful key and insert it into the matching door. The
+				satisfying click of the door unlocking brings you comfort as you step
+				into a long, bright hallway. The door behind you immediately shuts,
+				leaving you all alone with a row of paintings staring back at you.
+				Something crumples underneath your feet when you move closer to the
+				paintings and you pick up a piece of paper with symbols of{' '}
+				<strong>an eye, a bowtie, flowers and closed eye down.</strong>
+			</>
+		),
+		iframeURL: artist1,
 	},
 	{
 		content:
@@ -70,7 +92,7 @@ export const artist: scriptNode[] = [
 	{
 		content:
 			'You type the code into the keypad and it spits out a list of some sort for you to take. Upon closer inspection, it seems to be an itinerary for some sort?',
-		iframeURL: 'https://kaleidoscopic-choux-0bd54e.netlify.app/',
+		iframeURL: artist2,
 	},
 	{
 		content:
@@ -88,13 +110,20 @@ export const florist: scriptNode[] = [
 			'You choose the key decorated with flowers and insert it into the matching door. To your surprise, it swings open to reveal the manor’s garden. The luscious hedges decorate the field with a meticulous pattern and lead you to walk straight on until you reach an opening.',
 	},
 	{
-		content:
-			(<>On your right, you see a paper with two flowers printed on it. With your experience, you immediately know the first one is a rose, and the second is a lily, but why does it as "what month?" There is also a calendar with a stamp placed nearby. Along the edges of the stamp, the letters <strong>“mmdd”</strong> are engraved.</>),
+		content: (
+			<>
+				On your right, you see a paper with two flowers printed on it. With your
+				experience, you immediately know the first one is a rose, and the second
+				is a lily, but why does it as "what month?" There is also a calendar
+				with a stamp placed nearby. Along the edges of the stamp, the letters{' '}
+				<strong>“mmdd”</strong> are engraved.
+			</>
+		),
 	},
 	{
 		content:
 			'On your left, there is an altar that reflects a pleasant view of the rest of the garden where a grand fountain resides in the center of the hedges. You notice some odd markings on the fountain, but would need to take a closer look before you can figure out what it is. There are also some flowers littered around the altar and your heart sinks when you relize many of them are missing some petals. [Answer with four numbers only.]',
-		iframeURL: 'https://resonant-cobbler-098472.netlify.app/',
+		iframeURL: florist1,
 		answer: '0714',
 	},
 	{
@@ -104,7 +133,7 @@ export const florist: scriptNode[] = [
 	{
 		content:
 			"Something rustles in the hedges nearby. Turning around, you spot a bunny sniffing at the scraps of paper it's been collecting. There are traces of ink on some of them and you bend down to collect the matching pieces of paper. The bunny looks at you with sad eyes before dashing away. [Answer in lowercase with spaces between each input.]",
-		iframeURL: 'https://gleeful-cranachan-fac089.netlify.app/',
+		iframeURL: florist2,
 		answer: 'deadly nightshade',
 	},
 	{
@@ -117,13 +146,13 @@ export const chef: scriptNode[] = [
 	{
 		content:
 			'Your stomach grumbles as you take the key that looks awfully like a cake. In secret, you actually do take a bite of it just to make sure. (It wasn’t cake). The key fits perfectly in its matching door and you step into the manor’s stunning banquet hall. Everything looks amazing! But you notice that something seems out of place… Every good chef knows to serve their courses in order. And what’s with that huge safe at the end of the table? [Answer with four numbers only.]',
-		iframeURL: 'https://singular-baklava-b2281c.netlify.app/',
+		iframeURL: chef1,
 		answer: '3443',
 	},
 	{
 		content:
 			'You open up the huge safe to reveal what appears to be a set of recipes, however everything is cut up and jumbled together. As you put the pieces back together, you remember your florist friend telling you something about the lethality of azaleas, but can’t remember the exact details they said.',
-		iframeURL: 'https://meek-cuchufli-922b89.netlify.app/',
+		iframeURL: chef2,
 	},
 	{
 		content:
@@ -142,8 +171,20 @@ export const chef: scriptNode[] = [
 
 export const librarian: scriptNode[] = [
 	{
-		content:
-			(<>The pattern of books on the smallest key resonates with you and you insert it into the matching door. As the door opens, your heart is filled with the familiar, calming scent of old books and cedarwood. You find yourself standing in the middle of the manor’s renowned library and sneeze from all of the dust. On the other side of the room is another door, which is locked shut with a padlock. Upon closer inspection, you find that the code to open this lock is <strong>three, three digit numbers.</strong> Everything appears untouched, as if no one has visited the place for years, but a book left open on the floor catches your attention.</>),
+		content: (
+			<>
+				The pattern of books on the smallest key resonates with you and you
+				insert it into the matching door. As the door opens, your heart is
+				filled with the familiar, calming scent of old books and cedarwood. You
+				find yourself standing in the middle of the manor’s renowned library and
+				sneeze from all of the dust. On the other side of the room is another
+				door, which is locked shut with a padlock. Upon closer inspection, you
+				find that the code to open this lock is{' '}
+				<strong>three, three digit numbers.</strong> Everything appears
+				untouched, as if no one has visited the place for years, but a book left
+				open on the floor catches your attention.
+			</>
+		),
 	},
 	{
 		content: (
@@ -175,7 +216,7 @@ export const librarian: scriptNode[] = [
 	{
 		content:
 			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 9 books. On each book is a number from 1 to 9. You eye the box on the table again and suspect it must be something that could help you get out of there. [Answer with commas and spaces between each number.]',
-		iframeURL: 'https://eclectic-puffpuff-226153.netlify.app/',
+		iframeURL: librarian1,
 		answer: '4, 3, 5, 1, 2',
 	},
 	{
@@ -214,7 +255,7 @@ export const final: scriptNode[] = [
 				The only way is FORWARD
 			</em>
 		),
-		iframeURL: 'https://cerulean-banoffee-be9102.netlify.app/',
+		iframeURL: exit1,
 		answer: 'eloped',
 	},
 	{
@@ -252,7 +293,8 @@ export const final: scriptNode[] = [
 	},
 	{
 		content:
-			'You all turn to the fire in the corner. The fire in the corner is diminishing but it should do. Now all you have to do is decide who’s going to be the one who makes the key. You silently weigh your options before making your vote:',
+			'You all turn to the fire in the corner. The fire in the corner is diminishing but it should do.',
+		iframeURL: exit2,
 	},
 	// {
 	//   content: <em>Who do you think should make the key?</em>
