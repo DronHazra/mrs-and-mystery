@@ -189,8 +189,14 @@ export const librarian: scriptNode[] = [
 	{
 		content: (
 			<React.Fragment>
-				You walk over to the book and recognize the title: Romeo and Juliet.
-				There is a piece of paper sticking out from the pages with what you
+				You walk over to the book and recognize the title:{' '}
+				<a
+					href='https://shakespeare.folger.edu/downloads/pdf/romeo-and-juliet_PDF_FolgerShakespeare.pdf'
+					target='_blank'
+				>
+					Romeo and Juliet
+				</a>
+				. There is a piece of paper sticking out from the pages with what you
 				recall as a passage from this book <br />
 				<em>PARTING IS SUCH SWEET SORROW</em> <br />
 				The classic Shakesperian play of two star-crossed lovers whose fate led
