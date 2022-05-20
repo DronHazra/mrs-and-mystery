@@ -5,8 +5,8 @@ import { keyframes } from '@emotion/react';
 import useKey from './useKey';
 import { Box } from '@mui/material';
 
-const HEIGHT = 450;
-const WIDTH = 720;
+const HEIGHT = 300;
+const WIDTH = 480;
 
 const float = keyframes({
 	from: {
