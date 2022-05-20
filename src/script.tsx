@@ -340,8 +340,13 @@ export const final: scriptNode[] = [
 		content: <em>Breathe.</em>,
 	},
 	{
-		content:
-			'Finally, one of you suggests to stop and read the notes that could be found in the room. You all huddle around the first note:',
+		content: (
+			<>
+				Finally, one of you suggests to stop and read{' '}
+				<strong>the notes that could be found in the room.</strong> You all
+				huddle around the first note:
+			</>
+		),
 	},
 	{
 		content:
