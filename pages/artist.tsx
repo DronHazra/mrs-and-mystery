@@ -20,7 +20,13 @@ const Artist: NextPage = () => {
 		setFinished(true);
 	};
 	const proceed = (key: KeyboardEvent) => {
-		if (key.code == 'ArrowRight' && currentStepFinished) {
+		console.log(key);
+		if (
+			(key.code == 'ArrowRight' ||
+				key.code === 'Enter' ||
+				key.code == 'ArrowDown') &&
+			currentStepFinished
+		) {
 			setStep(step + 1);
 			setFinished(false);
 		}
@@ -41,6 +47,7 @@ const Artist: NextPage = () => {
 							finish={() => setFinished(true)}
 							answer={scriptItem.answer}
 							iframeURL={scriptItem.iframeURL}
+							answerFormat={scriptItem.answerFormat}
 						>
 							{scriptItem.content}
 						</DialogBox>

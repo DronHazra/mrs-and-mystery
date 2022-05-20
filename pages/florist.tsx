@@ -20,7 +20,12 @@ const Florist: NextPage = () => {
 		setFinished(true);
 	};
 	const proceed = (key: KeyboardEvent) => {
-		if (key.code == 'ArrowRight' && currentStepFinished) {
+		if (
+			(key.code == 'ArrowRight' ||
+				key.code === 'Enter' ||
+				key.code == 'ArrowDown') &&
+			currentStepFinished
+		) {
 			setStep(step + 1);
 			setFinished(false);
 		}
@@ -41,6 +46,7 @@ const Florist: NextPage = () => {
 							finish={() => setFinished(true)}
 							answer={scriptItem.answer}
 							iframeURL={scriptItem.iframeURL}
+							answerFormat={scriptItem.answerFormat}
 						>
 							{scriptItem.content}
 						</DialogBox>

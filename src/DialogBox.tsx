@@ -5,8 +5,8 @@ import { keyframes } from '@emotion/react';
 import useKey from './useKey';
 import { Box } from '@mui/material';
 
-const HEIGHT = 450;
-const WIDTH = 720;
+const HEIGHT = 300;
+const WIDTH = 480;
 
 const float = keyframes({
 	from: {
@@ -37,11 +37,13 @@ const DialogBox = ({
 	children,
 	answer,
 	iframeURL,
+	answerFormat,
 }: {
 	finish: () => void;
 	children: React.ReactNode;
 	answer?: string;
 	iframeURL?: string;
+	answerFormat?: string;
 }) => {
 	const skipped = useKey('ArrowRight');
 	const [answered, setAnswered] = React.useState(false);
@@ -69,6 +71,7 @@ const DialogBox = ({
 					}}
 					autoFocus
 					error={!answered}
+					helperText={answerFormat}
 					sx={{ m: 3, width: '80%' }}
 				></TextField>
 			)}
