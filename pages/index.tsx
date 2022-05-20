@@ -100,7 +100,7 @@ const Home: NextPage = () => {
 						</Link>
 					</Grid>
 					<Grid item xs={6}>
-						<Link href='/home' passHref>
+						<Link href='/invitation' passHref>
 							<Button
 								onClick={() => handleSubmit('librarian')}
 								fullWidth
