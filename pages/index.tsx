@@ -61,7 +61,7 @@ const Home: NextPage = () => {
 				</DialogTitle>
 				<Grid container spacing={3} sx={{ padding: 3, paddingTop: 1 }}>
 					<Grid item xs={6}>
-						<Link href='/home' passHref>
+						<Link href='/invitation' passHref>
 							<Button
 								onClick={() => handleSubmit('artist')}
 								fullWidth
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
 						</Link>
 					</Grid>
 					<Grid item xs={6}>
-						<Link href='/home' passHref>
+						<Link href='/invitation' passHref>
 							<Button
 								onClick={() => handleSubmit('chef')}
 								fullWidth
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
 						</Link>
 					</Grid>
 					<Grid item xs={6}>
-						<Link href='/home' passHref>
+						<Link href='/invitation' passHref>
 							<Button
 								onClick={() => handleSubmit('florist')}
 								fullWidth
