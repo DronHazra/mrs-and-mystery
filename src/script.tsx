@@ -21,6 +21,58 @@ const florist2 = 'https://admirable-valkyrie-7ff1ed.netlify.app/';
 const librarian1 = 'https://cate-pudding-95ef2f.netlify.app/';
 const librarian2 = 'https://friendly-douhua-dc51f1.netlify.app/';
 
+export const invitations = {
+	artist: (
+		<>
+			My good friend, as my wedding day approaches us, I couldn’t help but think
+			about all the memories we’ve made together. We do go quite far back, don’t
+			we! I remember how good you were with the paintbrush when we were younger.
+			Your art never failed to stun everyone who walked by. <br />
+			Are you still selling your paintings these days? <br />
+			It would be lovely if you could decorate our manor with your paintings.
+			Perhaps you would be willing to paint a picture of the ceremony as well.{' '}
+			<br />I hope to hear back from you soon.
+		</>
+	),
+	chef: (
+		<>
+			My good friend, as my wedding day approaches us, I couldn’t help but think
+			about all the memories we’ve made together. We do go quite far back, don’t
+			we! Every once in a while, I long for the cupcakes you would bring to
+			those ridiculously fancy parties our parents always forced us to. (I’ll be
+			honest, they were the only reason why I attended). <br />
+			I wanted to give you the honour of baking our wedding cake. I know your
+			bakery has been going well, and I have full faith that you’ll know just
+			what kind of cake to make. <br />
+			Please let me know if you are willing.
+		</>
+	),
+	librarian: (
+		<>
+			My good friend, as my wedding day approaches us, I couldn’t help but think
+			about all the memories we’ve made together. It took a lot of effort to
+			figure out your whereabouts, you know? <br />
+			I know you’ve always been interested in those… witchcraft… sort of
+			hobbies… which is why you’re always on the move. But I was wondering if
+			just this once, you could make a stop at my place for the wedding. Perhaps
+			there is a spell you can cast to make sure everything goes well? <br />
+			You may access the library in my manor if you need any resources.
+		</>
+	),
+	florist: (
+		<>
+			My good friend, as my wedding day approaches us, I couldn’t help but think
+			about all the memories we’ve made together. We do go quite far back, don’t
+			we? I have a request that I’m sure you’d be excited to receive: it would
+			be amazing if you could be in charge of the flowers for this event! <br />
+			With your experience working at that flower shop of yours, I’m sure you’ll
+			know exactly what to pick out. I want bouquets for each of our guests.{' '}
+			<br />
+			I’ll send you the list once it’s finalized.
+		</>
+	),
+};
+
 export const theater: scriptNode[] = [
 	{
 		content:
@@ -65,7 +117,7 @@ export const theater: scriptNode[] = [
 	},
 	{
 		content:
-			'Unlocking the padlocks, you swing the cabinet open to reveal a box with four keys, each with its own tag dangling from it. Which key do you take?',
+			'Unlocking the padlocks, you swing the cabinet open to reveal a box with four keys, each with its own tag dangling from it.',
 	},
 ];
 
@@ -205,6 +257,7 @@ export const librarian: scriptNode[] = [
 				combination on the door? [Answer in the format: ###-###-###]
 			</React.Fragment>
 		),
+		iframeURL: librarian1,
 		answer: '002-003-199',
 	},
 	{
@@ -222,7 +275,7 @@ export const librarian: scriptNode[] = [
 	{
 		content:
 			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 9 books. On each book is a number from 1 to 9. You eye the box on the table again and suspect it must be something that could help you get out of there. [Answer with commas and spaces between each number.]',
-		iframeURL: librarian1,
+		iframeURL: librarian2,
 		answer: '4, 3, 5, 1, 2',
 	},
 	{

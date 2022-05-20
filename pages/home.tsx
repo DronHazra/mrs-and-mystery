@@ -48,20 +48,15 @@ const Home: NextPage = () => {
 				})}
 				{keepY}
 				{step >= theater.length && (
-					<ButtonGroup fullWidth>
-						<Button LinkComponent={Link} href='/artist'>
-							Artist
-						</Button>
-						<Button LinkComponent={Link} href='/chef'>
-							Chef
-						</Button>
-						<Button LinkComponent={Link} href='/Librarian'>
-							Librarian
-						</Button>
-						<Button LinkComponent={Link} href='/florist'>
-							Florist
-						</Button>
-					</ButtonGroup>
+					<Button
+						LinkComponent={Link}
+						href={`/${localStorage.getItem('role')}`}
+						fullWidth
+						variant='contained'
+						sx={{ mb: 10 }}
+					>
+						take the {localStorage.getItem('role')}'s key
+					</Button>
 				)}
 			</div>
 		</Container>
