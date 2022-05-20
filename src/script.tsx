@@ -365,7 +365,7 @@ export const final: scriptNode[] = [
 	// } removed for now
 	{
 		content:
-			'The rest of you quickly start working to find the rest of the notes. [Answer in lowercase, one word.]',
+			'The rest of you quickly start working to find the rest of the notes. What material should you use? [Answer in lowercase, one word.]',
 		answer: 'iron',
 	},
 	{
