@@ -18,7 +18,12 @@ const Final: NextPage = () => {
 		setFinished(true);
 	};
 	const proceed = (key: KeyboardEvent) => {
-		if (key.code == 'ArrowRight' && currentStepFinished) {
+		if (
+			(key.code == 'ArrowRight' ||
+				key.code === 'Enter' ||
+				key.code == 'ArrowDown') &&
+			currentStepFinished
+		) {
 			setStep(step + 1);
 			setFinished(false);
 		}
