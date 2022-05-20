@@ -41,6 +41,7 @@ const Artist: NextPage = () => {
 							finish={() => setFinished(true)}
 							answer={scriptItem.answer}
 							iframeURL={scriptItem.iframeURL}
+							answerFormat={scriptItem.answerFormat}
 						>
 							{scriptItem.content}
 						</DialogBox>

@@ -4,6 +4,7 @@ type scriptNode = {
 	content: React.ReactNode;
 	answer?: string;
 	iframeURL?: string;
+	answerFormat?: string;
 };
 
 const HEIGHT = 450;
@@ -109,10 +110,8 @@ export const theater: scriptNode[] = [
 	{
 		content:
 			'One of you notices the piles of paper, messily strewn all over the wooden desk nearby. As you sift through them, you realize that they appear to be scripts of some sort.',
-	},
-	{
-		content:
-			'[Combine answers for each padlock in lowercase with commas and spaces between each input]',
+		answerFormat:
+			'Combine answers for each padlock in lowercase with commas and spaces between each input.',
 		answer: 'bee, panther, lion, caterpillar, bear, clownfish', //CHANGED ANSWER TO CLOWNFISH NO SPACES
 	},
 	{
@@ -138,8 +137,9 @@ export const artist: scriptNode[] = [
 	},
 	{
 		content:
-			'Four doodles, four digit code… maybe that’s got something to do with it? There’s a keypad at the very end of the hallway. [Answer with four numbers only.]',
+			'Four doodles, four digit code… maybe that’s got something to do with it? There’s a keypad at the very end of the hallway.',
 		answer: '4364',
+		answerFormat: 'Answer with four numbers only.',
 	},
 	{
 		content:
@@ -148,8 +148,9 @@ export const artist: scriptNode[] = [
 	},
 	{
 		content:
-			'The door at the end of the hallway is also now open to reveal a much more spacious room, occupied with only a table in the center. Spread across that table is a giant map and you can see another keypad next to it. [Answer with two numbers only.]',
+			'The door at the end of the hallway is also now open to reveal a much more spacious room, occupied with only a table in the center. Spread across that table is a giant map and you can see another keypad next to it.',
 		answer: '73',
+		answerFormat: 'Answer with two numbers only.',
 	},
 	{
 		content:
@@ -174,9 +175,10 @@ export const florist: scriptNode[] = [
 	},
 	{
 		content:
-			'On your left, there is an altar that reflects a pleasant view of the rest of the garden where a grand fountain resides in the center of the hedges. You notice some odd markings on the fountain, but would need to take a closer look before you can figure out what it is. There are also some flowers littered around the altar and your heart sinks when you relize many of them are missing some petals. [Answer with four numbers only.]',
+			'On your left, there is an altar that reflects a pleasant view of the rest of the garden where a grand fountain resides in the center of the hedges. You notice some odd markings on the fountain, but would need to take a closer look before you can figure out what it is. There are also some flowers littered around the altar and your heart sinks when you relize many of them are missing some petals.',
 		iframeURL: florist1,
 		answer: '0714',
+		answerFormat: 'Answer with four numbers only.',
 	},
 	{
 		content:
@@ -184,9 +186,10 @@ export const florist: scriptNode[] = [
 	},
 	{
 		content:
-			"Something rustles in the hedges nearby. Turning around, you spot a bunny sniffing at the scraps of paper it's been collecting. There are traces of ink on some of them and you bend down to collect the matching pieces of paper. The bunny looks at you with sad eyes before dashing away. [Answer in lowercase with spaces between each input.]",
+			"Something rustles in the hedges nearby. Turning around, you spot a bunny sniffing at the scraps of paper it's been collecting. There are traces of ink on some of them and you bend down to collect the matching pieces of paper. The bunny looks at you with sad eyes before dashing away.",
 		iframeURL: florist2,
 		answer: 'deadly nightshade',
+		answerFormat: 'Answer in lowercase with spaces between each input.',
 	},
 	{
 		content:
@@ -197,9 +200,10 @@ export const florist: scriptNode[] = [
 export const chef: scriptNode[] = [
 	{
 		content:
-			'Your stomach grumbles as you take the key that looks awfully like a cake. In secret, you actually do take a bite of it just to make sure. (It wasn’t cake). The key fits perfectly in its matching door and you step into the manor’s stunning banquet hall. Everything looks amazing! But you notice that something seems out of place… Every good chef knows to serve their courses in order. And what’s with that huge safe at the end of the table? [Answer with four numbers only.]',
+			'Your stomach grumbles as you take the key that looks awfully like a cake. In secret, you actually do take a bite of it just to make sure. (It wasn’t cake). The key fits perfectly in its matching door and you step into the manor’s stunning banquet hall. Everything looks amazing! But you notice that something seems out of place… Every good chef knows to serve their courses in order. And what’s with that huge safe at the end of the table?',
 		iframeURL: chef1,
 		answer: '3443',
+		answerFormat: 'Answer with four numbers only.',
 	},
 	{
 		content:
@@ -208,8 +212,9 @@ export const chef: scriptNode[] = [
 	},
 	{
 		content:
-			'You notice the weird set of letters at the bottom of the recipe. What could they possibly mean? Perhaps there’s something in the recipe that could help you out? [Answer in all lowercase with space between words.]',
+			'You notice the weird set of letters at the bottom of the recipe. What could they possibly mean? Perhaps there’s something in the recipe that could help you out?',
 		answer: 'and in the taste confounds the appetite',
+		answerFormat: 'Answer in all lowercase with space between words.',
 	},
 	{
 		content:
@@ -254,11 +259,12 @@ export const librarian: scriptNode[] = [
 				The classic Shakesperian play of two star-crossed lovers whose fate led
 				both to their deaths… You think about the missing wedding couple and
 				chuckle. How fitting. Maybe this quote is somehow connected to the
-				combination on the door? [Answer in the format: ###-###-###]
+				combination on the door?
 			</React.Fragment>
 		),
 		iframeURL: librarian1,
 		answer: '002-003-199',
+		answerFormat: 'Answer in the format ###-###-###',
 	},
 	{
 		content:
@@ -274,9 +280,10 @@ export const librarian: scriptNode[] = [
 	},
 	{
 		content:
-			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 9 books. On each book is a number from 1 to 9. You eye the box on the table again and suspect it must be something that could help you get out of there. [Answer with commas and spaces between each number.]',
+			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 9 books. On each book is a number from 1 to 9. You eye the box on the table again and suspect it must be something that could help you get out of there. ',
 		iframeURL: librarian2,
 		answer: '4, 3, 5, 1, 2',
+		answerFormat: 'Answer with commas and spaces between each number.',
 	},
 	{
 		content:
@@ -365,12 +372,14 @@ export const final: scriptNode[] = [
 	// } removed for now
 	{
 		content:
-			'The rest of you quickly start working to find the rest of the notes. What material should you use? [Answer in lowercase, one word.]',
+			'The rest of you quickly start working to find the rest of the notes. What material should you use?',
 		answer: 'iron',
+		answerFormat: 'Answer in lowercase, one word.',
 	},
 	{
-		content: 'And the cuts? [Answer with four numbers only.]',
+		content: 'And the cuts?',
 		answer: '3212',
+		answerFormat: 'Answer with four numbers only.',
 	},
 	{
 		content:
