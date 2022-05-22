@@ -324,6 +324,7 @@ export const final: scriptNode[] = [
 		),
 		iframeURL: exit1,
 		answer: 'eloped',
+		answerFormat: 'The bottom of the page looks a little folded...',
 	},
 	{
 		content:
