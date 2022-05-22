@@ -19,7 +19,7 @@ const exit1 = 'https://quiet-rugelach-6582d5.netlify.app/';
 const exit2 = 'https://luxury-cactus-56f615.netlify.app/';
 const florist1 = 'https://nimble-manatee-ef173d.netlify.app/';
 const florist2 = 'https://admirable-valkyrie-7ff1ed.netlify.app/';
-const librarian1 = 'https://cate-pudding-95ef2f.netlify.app/';
+const librarian1 = 'https://delicate-pudding-95ef2f.netlify.app/';
 const librarian2 = 'https://friendly-douhua-dc51f1.netlify.app/';
 
 export const invitations = {
