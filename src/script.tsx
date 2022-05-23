@@ -281,9 +281,9 @@ export const librarian: scriptNode[] = [
 	},
 	{
 		content:
-			'You walk over to inspect the bookshelf. All the books on this shelf are in alphabetical order, except for 8 books. On each book is a number from 1 to 8. You eye the box on the table again and suspect it must be something that could help you get out of there. ',
+			"You walk over to inspect the bookshelf. All the books seem like they should be in alphabetical order, but 6 of them aren't. On each book is a number from 1 to 8. You eye the box on the table again and suspect it must be something that could help you get out of there. ",
 		iframeURL: librarian2,
-		answer: '4, 3, 5, 1, 2',
+		answer: '6, 5, 3, 7, 2, 4',
 		answerFormat: 'Answer with commas and spaces between each number.',
 	},
 	{
