@@ -215,7 +215,7 @@ export const chef: scriptNode[] = [
 			'You notice the weird set of letters at the bottom of the recipe. What could they possibly mean? Perhaps there’s something in the recipe that could help you out?',
 		answer: 'and in the taste confounds the appetite',
 		answerFormat:
-			'Answer in all lowercase with space between words. Refresh to change the missing tile.',
+			'Answer in all lowercase with space between words. If the missing tile affects the code at the bottom, please refer to the Hint List attached in the email (Chef Puzzle Hint 3)',
 	},
 	{
 		content:
