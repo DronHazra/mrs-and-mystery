@@ -273,7 +273,7 @@ export const librarian: scriptNode[] = [
 	},
 	{
 		content:
-			'Once again, you notice that on the other side of the room is a locked door. You also spot a small box on one of the tables, which has a number lock for 9 digits attached to it.',
+			'Once again, you notice that on the other side of the room is a locked door. You also spot a small box on one of the tables which seems to be locked by a pin code.',
 	},
 	{
 		content:
@@ -281,10 +281,10 @@ export const librarian: scriptNode[] = [
 	},
 	{
 		content:
-			"You walk over to inspect the bookshelf. All the books seem like they should be in alphabetical order, but 6 of them aren't. On each book is a number from 1 to 8. You eye the box on the table again and suspect it must be something that could help you get out of there. ",
+			"You walk over to inspect the bookshelf. All the books seem like they should be in alphabetical order, but 5 of them aren't. On each book is a number from 1 to 8. You eye the box on the table again and suspect it must be something that could help you get out of there. ",
 		iframeURL: librarian2,
-		answer: '4, 3, 5, 1, 2',
-		answerFormat: 'Answer with commas and spaces between each number.',
+		answer: '65724',
+		answerFormat: 'Answer with 5 digits only.',
 	},
 	{
 		content:
